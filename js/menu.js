@@ -34,16 +34,14 @@
 
 // Dritte Lösung - JavaScript - Toggle .classList.toggle()
 
+// function myFunction() {
+//     var element = document.getElementById("menu");
+//     element.classList.toggle("hidden");
+//   }
 
-// var toggle  = document.getElementById("menu");
-// var openMenu = document.getElementById("menu-btn");
+// Bessere Version
 
-// toggle.addEventListener("click", function() {
-//     openMenu.classList.toggle("show");
-// });
+document.getElementById("menu-btn").addEventListener("click", function() {
+    document.getElementById("menu").classList.toggle("hidden")
+  });
 
-
-function myFunction() {
-    var element = document.getElementById("menu");
-    element.classList.toggle("hidden");
-  }
