@@ -41,8 +41,9 @@
 
 // Bessere Version
 
-document.getElementById("menu-btn").addEventListener("click", function() {
-    document.getElementById("menu").classList.toggle("hidden")
-
+const toggle  = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("menu");
+toggle.addEventListener("click", function() {
+    mobileMenu.classList.toggle("hidden")
   });
 

@@ -11,5 +11,38 @@
 document.addEventListener('DOMContentLoaded', function() {
   console.log('DOM ready');
 
+//   import Swiper from 'swiper'
+//   import 'swiper/dist/css/swiper.css'
+//   export default {
+//   props: {
+//     homeTitle: { type: String, default: '' },
+//     homeDescription: { type: String, default: '' }
+//   },
+//   data() {
+//     return {}
+//   },
+//   mounted() {
+//     const swiper = new Swiper('.swiper-container', {
+//       navigation: {
+//         nextE1: '.swiper-button-next',
+//         prevE1: '.swiper-button-prev'
+//       },
+//       pagination: {
+//         el: '.swiper-pagination',
+//         type: 'bullets'
+//       },
+//       loop: true,
+//       autoplay: {
+//         delay: 4000
+//       }
+//     })
+//     console.log(swiper)
+//   }
+// }
+
+
+
 
 });
+
+
