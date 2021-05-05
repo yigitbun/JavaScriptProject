@@ -15,34 +15,48 @@
 // Lösungen
 //  1. Listen to the submit of the form element with the id "support-form"
 
-const form = document.getElementById("support-form");
-const checkbox = document.getElementById("input-privacy");
+// const form = document.getElementById("support-form");
+// const checkbox = document.getElementById("input-privacy");
 
-form.addEventListener('submit',function(e){
-    e.preventDefault(); // Cancel the native event
-    if (checkbox.checked = false) {
-       alert("sadsa");
-    }
-});
+// form.addEventListener('submit',(e) =>{
+//     e.preventDefault(); // Cancel the native event
+// });
 
-
-// var confirm=document.getElementById("submit").value;
-//          if((confirm.checked==false)
-//          {
-//          alert("plz check the checkbox field");
-//          document.getElementbyId("confirm").focus();
-//          return false;
-//          }
 
 // 2. Validate on submit, that:
 // 2.1 the checkbox with the id "input-privacy" is checked
 
+const form = document.getElementById("support-form");
+const checkbox = document.getElementById("input-privacy");
 
-// const checkbox = document.getElementById("checkbox")
-// checkbox.checked = true;
-     
+form.addEventListener('submit',(e) =>{
+    const checkbox = document.querySelector('#input-privacy');
+    if (checkbox.checked == false) {
+        alert('Please accept the terms!')
+    }else {
+        re
+        console.log('submitted');
+    }
+    e.preventDefault(); // Cancel the native event
+
+});
+
+
 
 // 2.2 all other inputs are not empty. If they're empty, add the class "border-red-500" to every empty input
+
+
+
+// window.addEventListener("load", function() {
+//     let form = document.querySelector("form");
+//     form.addEventListener("submit", function(event) {
+//         e.preventDefault();
+//         alert("submit clicked");
+//     });
+//  });
+
+
+
 
 
 // window.addEventListener('load', ()=>{

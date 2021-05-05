@@ -4,3 +4,4 @@
  * 2. Clear the input by clicking the "x" button
  * 
  */
+
