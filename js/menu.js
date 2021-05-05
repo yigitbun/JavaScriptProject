@@ -43,6 +43,7 @@
 
 const toggle  = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("menu");
+
 toggle.addEventListener("click", function() {
     mobileMenu.classList.toggle("hidden")
   });

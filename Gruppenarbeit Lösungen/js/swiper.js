@@ -8,8 +8,7 @@
  * 
  */
 
- document.addEventListener('DOMContentLoaded', function () {
-  console.log('DOM ready');
+document.addEventListener('DOMContentLoaded', function() {
 
   let swiper = new Swiper('.swiper-container', {
     pagination: {
@@ -19,9 +18,7 @@
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
+    }
   });
+
 });
-
-
-
