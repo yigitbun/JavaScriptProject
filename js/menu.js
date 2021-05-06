@@ -48,3 +48,13 @@ toggle.addEventListener("click", function() {
     mobileMenu.classList.toggle("hidden")
   });
 
+//   let a = 3;
+// let b = 5;
+// let template = `
+//   <form action="/" id="fetch-form" method="POST">     // breaks can be used
+//     <input id="input-${ a+b }" type="text">           // use variables inside template strings
+//     <div id="output" data-number="23"></div>
+//     <button id="submit">Klick mich!</button>
+//   </form>`;
+// console.log(template);
+

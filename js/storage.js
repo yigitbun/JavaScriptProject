@@ -8,3 +8,20 @@
  * https://developer.mozilla.org/de/docs/Web/API/Window/localStorage
  * 
  */
+
+ const likeElements = document.querySelectorAll(".like-btn");
+ likeElements.forEach((item, index) => {
+     item.classList.remove('liked');
+     item.addEventListener('click', function(event) { 
+        event.preventDefault() 
+        item.classList.contains('liked') ?
+             (item.classList.remove('liked'), localStorage.removeItem(index))
+             : (item.classList.add('liked'), localStorage.setItem(index, "liked"))
+            })
+ })
+ 
+ window.addEventListener('load', () =>
+     Object.keys(localStorage).map((key) =>
+         likeElements[parseInt(key)].classList.add('liked')
+     )
+ );

@@ -13,33 +13,33 @@
 
 
 // Lösungen
-//  1. Listen to the submit of the form element with the id "support-form"
+
+document.addEventListener('DOMContentLoaded', function(){
+    let formElement = document.getElementById("support-form");
+    formElement.addEventListener('submit',(event) =>{
+        event.preventDefault();
+
+    });
+
+})
+
+
+
 
 // const form = document.getElementById("support-form");
 // const checkbox = document.getElementById("input-privacy");
 
 // form.addEventListener('submit',(e) =>{
+//     const checkbox = document.querySelector('#input-privacy');
+//     if (checkbox.checked == false) {
+//         alert('Please accept the terms!')
+//     }else {
+//         re
+//         console.log('submitted');
+//     }
 //     e.preventDefault(); // Cancel the native event
+
 // });
-
-
-// 2. Validate on submit, that:
-// 2.1 the checkbox with the id "input-privacy" is checked
-
-const form = document.getElementById("support-form");
-const checkbox = document.getElementById("input-privacy");
-
-form.addEventListener('submit',(e) =>{
-    const checkbox = document.querySelector('#input-privacy');
-    if (checkbox.checked == false) {
-        alert('Please accept the terms!')
-    }else {
-        re
-        console.log('submitted');
-    }
-    e.preventDefault(); // Cancel the native event
-
-});
 
 
 
