@@ -4,3 +4,21 @@
  * 2. when the user clicks the button, scroll the page all the way up to the start
  * 
  */
+
+ document.addEventListener('DOMContentLoaded', function() {
+
+    let button = document.getElementById('return-to-top');
+
+    button.addEventListener('click', function(){
+        window.scrollTo({ 
+            top: 0, behavior: 'smooth' 
+        })
+
+    });
+
+    
+
+
+
+
+});
